@@ -1,0 +1,349 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.header-heading {
+  font-weight: bold;
+  color: #292b47;
+}
+/* sidebar css  */
+
+.sidebar {
+  width: 100%;
+  padding: 0 15px;
+}
+.sidebar > div {
+  width: 100%;
+}
+
+.sidebar-button {
+  width: 100%;
+  background-color: #00a392;
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  border: none;
+  padding: 8px 0px;
+  border-radius: 5px;
+}
+
+.menu-icon {
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
+}
+
+/* sidebar header */
+.sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sidebar-header > p {
+  font-weight: bold;
+}
+.sidebar-header > div {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.sidebar-header > div > p {
+  transform: rotate(180deg);
+}
+
+.sidebar-header > p {
+  color: lightgray;
+}
+
+/* contact header  */
+.contact-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+/* .contact-header > p {
+  transform: rotate(180deg);
+} */
+
+.contact-header h2 {
+  font-size: 1.6rem !important;
+}
+
+.header-content {
+  padding: 10px;
+}
+
+.contact-header-input {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 7px 7px;
+  border-radius: 20px;
+  background-color: #f3f5f9;
+  /* background-color: red; */
+}
+.contact-header-input::placeholder {
+  color: lightgray;
+  opacity: 1; /* Firefox */
+}
+
+.CONTACT-LIST-CONTENT {
+  width: 100%;
+  padding: 0 15px;
+}
+
+.big-add-icon {
+  color: #00a392;
+  font-size: 30px;
+}
+
+.header-input-container {
+  background-color: #f3f5f9;
+  display: flex;
+  align-items: center;
+  border-radius: 30px;
+  padding: 0px 8px;
+}
+
+.search-icon {
+  color: lightgray;
+}
+
+.contact-select-icon {
+  color: gray;
+  font-size: 25px;
+}
+
+.export-all-button {
+  background-color: #00a392;
+  color: white;
+  font-weight: bold;
+  font-size: 13px;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 10px;
+  margin-right: 8px;
+}
+
+/* tagmenulist css */
+
+.sidebar-ul {
+  list-style: none;
+  padding: 10px 0px 6px 10px;
+}
+
+.sidebar-ul > li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 3px 0px;
+}
+
+.sidebar-ul > li p {
+  font-weight: bold;
+}
+
+.sidebar-ul > li > .icon {
+  color: #00a392;
+  font-size: 22px;
+  margin-bottom: 0;
+}
+
+/* message statue css  */
+
+.message-statusDiv {
+  display: flex;
+  width: 100%;
+}
+
+.message-statusDiv > input {
+  width: 100%;
+  outline: none;
+  margin: 0 7px;
+  padding: 0 5px;
+}
+
+.message-statusDiv > input::placeholder {
+  color: lightgray;
+  opacity: 1; /* Firefox */
+}
+
+.sidebar-heading {
+  font-size: 19px;
+  font-weight: bold;
+  color: #292b47;
+}
+
+/* contact items css  */
+
+.contact-heading {
+  margin-left: 15px;
+  font-weight: bold;
+  color: #292b47;
+}
+
+.contact-name {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.contact-number {
+  color: lightgray;
+  font-size: 14px;
+}
+
+.small-add-icon {
+  font-size: 25px;
+  color: #00a392;
+  margin-right: 8px;
+}
+
+.contact-image {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+.contact-items-container {
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
+}
+
+.contact-items-container > div {
+  margin-left: 10px;
+}
+
+.contact-items-scroll {
+  /* height: calc(100vh - 149px); */
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+.contact-items-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+/* scroll content  */
+.contact-items-scroll {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.sidebar-containerOpen {
+  width: 30%;
+  animation: animeOpen 0.3s linear;
+}
+
+.sidebar-containerClose {
+  width: 0%;
+  overflow: hidden;
+  z-index: -10;
+  animation: animeClose 0.3s linear;
+}
+
+@keyframes animeOpen {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 25%;
+  }
+}
+
+@keyframes animeClose {
+  from {
+    width: 25%;
+  }
+  to {
+    width: 0%;
+  }
+}
+
+.contact-container {
+  width: 100%;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar-containerOpen {
+    width: 100%;
+  }
+
+  @keyframes animeOpen {
+    from {
+      width: 0%;
+    }
+    to {
+      width: 100%;
+    }
+  }
+}
+
+/* loader css  */
+
+.balls {
+  margin: 5px;
+   width: 10px;
+  height: 10px;
+  background-color: #00a392;
+  border-radius: 50%;
+  /* animation: ball1 1.7s infinite ease; */
+}
+#ball {
+  display: flex;
+  justify-content: center;
+    align-items: center;
+    padding-left: 17px;
+    width: 100%;
+    height: 100vh;
+    border-radius: 10px;
+}
+#ball1 {
+  animation: ball1 1.7s infinite ease;
+}
+#ball2 {
+  animation: ball1 1.7s infinite ease 0.1s;
+}
+#ball3 {
+  animation: ball1 1.7s infinite ease 0.2s;
+}
+@keyframes ball1 {
+  0% {
+    margin-top: 0px;
+  }
+  10% {
+    margin-top: -50px;
+  }
+  20% {
+    margin-top: 0px;
+  }
+  100% {
+    margin-top: 0px;
+  }
+}
+@keyframes ball2 {
+}
+@keyframes ball3 {
+}
+#credits a {
+  color: #8b46e2;
+  text-decoration: none;
+}
+#credits a:hover {
+  color: #ffdd00;
+}
